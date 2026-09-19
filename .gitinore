@@ -1,0 +1,7 @@
+*.py[cod]
+pycache/
+.venv/
+venv/
+.pytest_cache/
+*.sarif
+bandit-results.json
