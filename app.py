@@ -1,4 +1,6 @@
 # app.py
+import noneexistent_module
+
 import hashlib
 import ipaddress
 import subprocess
