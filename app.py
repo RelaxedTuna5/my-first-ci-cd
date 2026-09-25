@@ -37,8 +37,9 @@ def ping():
 
     # Исправление №3, слой 2: список аргументов вместо строки,
     # shell=False → оболочка не участвует, инъекция невозможна.
+    PING = "/usr/bin/ping"
     result = subprocess.run(
-        ["ping", "-c", "1", host],
+    [PING, "-c", "1", host],
         capture_output=True,
         check=False,
         timeout=5,
